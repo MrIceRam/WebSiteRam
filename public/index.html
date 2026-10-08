@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мои заметки</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h1>📝 Заметки</h1>
+      <button id="new-note-btn" title="Новая заметка">+</button>
+    </div>
+    <input id="search" type="text" placeholder="Поиск...">
+    <ul id="notes-list"></ul>
+    <div class="sidebar-footer">
+      <button id="auth-btn">🔓 Разблокировать</button>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div id="viewer" class="viewer">
+      <p class="placeholder">Выбери заметку слева или создай новую</p>
+    </div>
+
+    <div id="editor" class="editor hidden">
+      <input id="editor-title" type="text" placeholder="Заголовок">
+      <textarea id="editor-content" placeholder="Текст заметки (поддерживается Markdown)..."></textarea>
+      <div class="editor-actions">
+        <button id="save-btn" class="primary">Сохранить</button>
+        <button id="cancel-btn">Отмена</button>
+        <button id="delete-btn" class="danger">Удалить</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
