@@ -12,6 +12,12 @@
       "database_id": "75c99354-84d9-461d-8dad-347c39c07aa6"
     }
   ],
+  "kv_namespaces": [
+    {
+      "binding": "IMAGES_KV",
+      "id": "5b4e2fd91b0b4417b4946c51c080a83e"
+    }
+  ],
   "assets": {
     "directory": "./public",
     "binding": "ASSETS"
